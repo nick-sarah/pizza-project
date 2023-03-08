@@ -37,40 +37,57 @@
                     <!--                    <a class="nav-link disabled">Link</a>-->
                 </li>
             </ul>
+            <!--search bar-->
             <form class="navbar-collapse" role="search">
                 <input class="w-25 form-control me-2" type="search" placeholder="Zip Code" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <button class="btn btn-outline-success" type="submit">Search stores near you!</button>
             </form>
             <button type="button" class="btn mb-auto btn-primary">Sign Up</button>
         </div>
 
     </div>
 </nav>
-
+    <!-- image below-->
 <nav class="navbar bg-body-tertiary">
     <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="pizza.png" alt="Bootstrap" width="1250" >
-        </a>
+        <div class=“container-fluid ” style=“background-image: url(‘pizza.png’)“>
+        <h1 class=“display-2 ”>Veridian Dynamics</h1>
+    </div>
+<!--        <a class="navbar-brand" href="#">-->
+<!--            <div class="has-bg-img">-->
+<!--                <h2>Welcome To Pizza World!</h2>-->
+
+<!--            <img class="bg-img" src="pizza.png" alt="Bootstrap" width="1250" >-->
+<!--            </div>-->
+<!--        </a>-->
 <!--        <input class="margin-left=-30px">-->
         <h1>Build your own pizza!
         </h1>
         </div>
     </div>
 </nav>
+<!-- tabs below-->
 <ul class="nav nav-tabs">
     <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Size and Crust</a>
+        <a class="nav-link active" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-1-circle" viewBox="0 0 16 16">
+            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002V12H7.971V5.338h-.065L6.072 6.656V5.385l1.899-1.383h1.312Z"/>
+        </svg> Size and Crust</a>
+
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Cheese and sauce</a>
+        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-2-circle" viewBox="0 0 16 16">
+            <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24v.07H5.375v-.064c0-1.213.879-2.402 2.637-2.402 1.582 0 2.613.949 2.613 2.215 0 1.002-.6 1.667-1.287 2.43l-.096.107-1.974 2.22v.077h3.498V12H5.422v-.832l2.97-3.293c.434-.475.903-1.008.903-1.705 0-.744-.557-1.236-1.313-1.236-.843 0-1.336.615-1.336 1.306Z"/>
+        </svg> Cheese and sauce</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#">Toppings</a>
+        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-3-circle" viewBox="0 0 16 16">
+            <path d="M7.918 8.414h-.879V7.342h.838c.78 0 1.348-.522 1.342-1.237 0-.709-.563-1.195-1.348-1.195-.79 0-1.312.498-1.348 1.055H5.275c.036-1.137.95-2.115 2.625-2.121 1.594-.012 2.608.885 2.637 2.062.023 1.137-.885 1.776-1.482 1.875v.07c.703.07 1.71.64 1.734 1.917.024 1.459-1.277 2.396-2.93 2.396-1.705 0-2.707-.967-2.754-2.144H6.33c.059.597.68 1.06 1.541 1.066.973.006 1.6-.563 1.588-1.354-.006-.779-.621-1.318-1.541-1.318Z"/>
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8Z"/>
+        </svg> Toppings</a>
     </li>
 
 </ul>
-
+<h2 class="w-100 p-2" style=" background-color: #0C6DFD; color:white; font-size: 15px; border-radius: 3px ">Choose Size and Crust</h2>
 <div class="card" style="width: 85rem;">
     <div class="card-header">
         Hand Tossed
@@ -80,11 +97,11 @@
         <li class="list-group-item">Garlic seasoned crust with a rich, buttery taste.
             <br></li>
 
-        <li class="list-group-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault6">
+        <li class="list-group-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
             <label class="form-check-label" for="flexRadioDefault1">
                 Small (10")
             </label><br></li>
-        <li class="list-group-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <li class="list-group-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
             <label class="form-check-label" for="flexRadioDefault1">
                 Medium (12")
             </label><br></li>
@@ -101,126 +118,128 @@
             <label class="form-check-label" for="flexRadioDefault1">
                 Medium (12")
             </label><br></li>
-        <li class="list-group-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+        <li class="list-group-item"><input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
             <label class="form-check-label" for="flexRadioDefault1">
                 Large (14")
             </label><br></li>
     </ul>
-
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Right-aligned menu example
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end">
-            <li><button class="dropdown-item" type="button">Action</button></li>
-            <li><button class="dropdown-item" type="button">Another action</button></li>
-            <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
+    <div class="d-flex p-2 bd-highlight justify-content-end">
+        <button type="button" class="btn mb-auto btn-primary">Next Step</button>
     </div>
+    <!-- end of the first cards for size and crust-->
+    <!--    drop down-->
+    <h2 class="w-100 p-2" style=" background-color: #0C6DFD; color:white; font-size: 15px; border-radius: 3px ">Choose Size and Crust</h2>
+    <div class="card" style="width: 85rem;">
+        <div class="card-header">
+            Cheese
+        </div>
+        <ul class="list-group list-group-flush">
 
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Right-aligned menu example
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end">
-            <li><button class="dropdown-item" type="button">Action</button></li>
-            <li><button class="dropdown-item" type="button">Another action</button></li>
-            <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-    <div class="btn-group">
-        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Right-aligned menu example
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end">
-            <li><button class="dropdown-item" type="button">Action</button></li>
-            <li><button class="dropdown-item" type="button">Another action</button></li>
-            <li><button class="dropdown-item" type="button">Something else here</button></li>
-        </ul>
-    </div>
-</div>
+            <li class="list-group-item">How Much?</li>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary justify-content-start align-items-start">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Pizza World</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Order Online</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Menu</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <!--                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
-                    <!--                        Link-->
-                    </a>
-                    <ul class="dropdown-menu">
+            <li > <div class="dropdown" >
+                <button class="btn btn-secondary dropdown-toggle  w-100 text-start"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Normal
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div></li>
+
+        </ul>
+        <div class="card-header">
+            Sauce
+        </div>
+        <ul class="list-group list-group-flush">
+
+            <li class="list-group-item">What Type?</li>
+
+            <li >
+                <div class="dropdown" >
+                <button class="btn btn-secondary dropdown-toggle  w-100 text-start"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Tomato
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div></li>
+            <li class="list-group-item">How Much?</li>
+
+            <li >
+
+                <div class="dropdown" >
+                    <button class="btn btn-secondary dropdown-toggle  w-100 text-start"  type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Normal
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <!--                    <a class="nav-link disabled">Link</a>-->
-                </li>
-            </ul>
-            <form class="d-flex navbar-collapse align-self-sm-start" role="search">
-                <input class="form-control me-2 align-self-sm-start" type="search" placeholder="Zip Code" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-            <button type="button" class="btn btn-primary">Sign Up</button>
+                </div></li>
+        </ul>
+        <div class="d-flex p-2 bd-highlight justify-content-end">
+            <button type="button" class="btn mb-auto btn-primary">< Previous   Next > </button>
         </div>
 
-    </div>
-</nav>
+        <h2 class="w-100 p-2" style=" background-color: #0C6DFD; color:white; font-size: 15px; border-radius: 3px ">Choose Toppings</h2>
+    <div class="card" style="width: 85rem;">
+        <div class="card-header">
+            Choose Meats
+        </div>
+        <ul class="list-group list-group-flush">
 
-<!-- image below-->
-<nav class="navbar bg-body-tertiary">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="pizza.png" alt="Bootstrap" width="1250" >
-        </a>
-    </div>
-</nav>
-<!--end of nav bar-->
-<div>
-<ul class="nav nav-tabs">
-    <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="#">Size and Crust</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Cheese and sauce</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Toppings</a>
-    </li>
-</ul>
-<!--end of tabs>-->
-<!--check boxes below-->
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1.1" checked>
+                <label class="form-check-label" for="flexCheckChecked1.1">
+                    Beef
+                </label></li>
 
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1.2" checked>
+                <label class="form-check-label" for="flexCheckChecked1.2">
+                    Ham
+                </label></li>
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1.3" checked>
+                <label class="form-check-label" for="flexCheckChecked1.3">
+                    Philly Steak
+                </label></li>
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1.4" checked>
+                <label class="form-check-label" for="flexCheckChecked1.4">
+                    Bacon
+                </label></li>
+        </ul>
+        <div class="card-header">
+            Choose Non-Meats
+        </div>
+        <ul class="list-group list-group-flush">
 
-<div class="form-check">
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-    <label class="form-check-label" for="flexCheckChecked">
-        Checked checkbox
-    </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked>
-    <label class="form-check-label" for="flexCheckChecked">
-        Checked checkbox
-    </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3" checked>
-    <label class="form-check-label" for="flexCheckChecked">
-        Checked checkbox
-    </label><br>
-    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4" checked>
-    <label class="form-check-label" for="flexCheckChecked">
-        Checked checkbox
-    </label>
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2.1" checked>
+                <label class="form-check-label" for="flexCheckChecked2.1">
+                    Green Peppers
+                </label></li>
+
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2.2" checked>
+                <label class="form-check-label" for="flexCheckChecked2.2">
+                    Mushrooms
+                </label></li>
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2.3" checked>
+                <label class="form-check-label" for="flexCheckChecked2.3">
+                    Onions
+                </label></li>
+            <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2.4" checked>
+                <label class="form-check-label" for="flexCheckChecked2.4">
+                    Jalapeno Peppers
+                </label></li>
+        </ul>
+        <div class="d-flex p-2 bd-highlight justify-content-end">
+            <button type="button" class="btn mb-auto btn-primary">Checkout <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+            </svg></button>
+        </div>
+
 </div>
 </div>
 </body>
